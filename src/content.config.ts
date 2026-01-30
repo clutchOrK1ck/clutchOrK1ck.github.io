@@ -23,6 +23,7 @@ const hero = defineCollection({
             "YouTube",
             "Email",
             "FolderCode",
+            "Itch"
           ]),
           label: z.string(),
         })
