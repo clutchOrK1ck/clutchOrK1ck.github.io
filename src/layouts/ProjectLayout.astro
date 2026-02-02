@@ -124,7 +124,7 @@ console.log("Extracted gallery for: ", projectId, ": ", projectGallery);
           <Carousel items={projectGallery.length}>
             {projectGallery.map((item) => (
               <li class="w-full">
-                <div class="aspect-video w-full bg-black">
+                <div class="aspect-video w-full overflow-hidden rounded-2xl bg-black">
                   {
                     item.type === "image" ? (
                       <img
