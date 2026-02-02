@@ -117,22 +117,6 @@ console.log("Extracted gallery for: ", projectId, ": ", projectGallery);
       </a>
     </div>
 
-    <!-- Featured Image -->
-    <!-- TODO: Future Enhancement - Support multiple images/project gallery -->
-    {
-      image && (
-        <figure class="mb-8 rounded-2xl overflow-hidden">
-          <Image
-            src={image}
-            alt={title}
-            class="w-full aspect-video object-cover"
-            width={1200}
-            height={630}
-          />
-        </figure>
-      )
-    }
-
     <!-- Project gallery -->
     {
       projectGallery.length > 0 && (
