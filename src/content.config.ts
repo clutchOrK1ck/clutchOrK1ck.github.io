@@ -76,11 +76,28 @@ const projects = defineCollection({
       title: z.string(),
       description: z.string(),
       image: image(),
+      preview: z.union([
+        z.object({
+          type: z.literal("image"),
+          src: z.string(), // or z.any() if using imported assets
+          alt: z.string().optional(),
+        }),
+        z.object({
+          type: z.literal("video"),
+          src: z.string(),
+          poster: z.string().optional(),
+          autoplay: z.boolean().optional(),
+          loop: z.boolean().optional(),
+          muted: z.boolean().optional(),
+          alt: z.string().optional(),
+        }),
+      ]),
       startDate: z.coerce.date(),
       endDate: z.coerce.date().optional(),
       skills: z.array(z.string()),
       demoLink: z.string().url().optional(),
       sourceLink: z.string().url().optional(),
+      itchLink: z.string().url().optional(),
     }),
 });
 

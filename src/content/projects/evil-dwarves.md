@@ -1,19 +1,23 @@
 ---
-title: Templix - Professional Marketplace Template
+title: Evil Dwarves - a top-down shooter with fun ricochet mechanics
 description: >-
   A production-ready marketplace for selling templates and digital products.
   Built with Astro, Keystatic CMS, and modern web technologies.
+preview:
+  type: video
+  src: /previews/projects/evil-dwarves/20220611_190317.mp4
+  poster: /images/projects/evil-dwarves/image.png
+  autoplay: true
+  loop: true
+  muted: true
 image: '@assets/projects/templix-professional-marketplace-template/image.png'
 startDate: 2025-12-17
 endDate: 2026-01-05
 skills:
-  - Astro
-  - Keystatic CMS
-  - DaisyUI
-  - React
-  - Typescript
-demoLink: https://templix.lwg.workers.dev/
+  - UE5 Blueprints
+  - Blender
 sourceLink: https://portal.astro.build/themes/templix-professional-marketplace-template/
+itchLink: https://clutchorkick.itch.io/evil-dwarves
 featured: true
 ---
 ## Features
