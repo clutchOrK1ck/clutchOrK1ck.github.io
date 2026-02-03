@@ -10,8 +10,8 @@ preview:
   autoplay: true
   loop: true
   muted: true
-startDate: 2025-12-17
-endDate: 2026-01-05
+startDate: 2024-05-10
+endDate: 2024-05-20
 skills:
   - UE5 Blueprints
   - Blender
@@ -19,42 +19,24 @@ sourceLink: https://portal.astro.build/themes/templix-professional-marketplace-t
 itchLink: https://clutchorkick.itch.io/evil-dwarves
 featured: true
 ---
+## The Game
+
+**Evil Dwarves** is a small top-down shooter game with fun bullet ricochet mechanics that I developed in UE5 as a solo during the 10 days of the [game jam](https://itch.io/jam/bullet-hell-v). This also was my first UE project that ended up as a playable game. 
+
 ## Features
 
-- 🎯 **Keystatic CMS Integration** - Git-based headless CMS with visual editor, no backend needed
-- ⭐ **Advanced Rating System** - Browser fingerprinting voting with fraud prevention and cooldown
-- 💳 **Multi-Currency Commerce** - Support for USD, BRL, EUR with automatic locale formatting
-- 🔍 **Advanced Search & Filters** - Real-time search, tag filtering, price filters, sorting, pagination
-- 📢 **Marketing Tools** - Promotional banners with countdown timers, promo codes, 8 color variants
-- 🎨 **Modern Design System** - Tailwind CSS v4, DaisyUI v5, custom themes, dark mode support
-- 📱 **Mobile-First Responsive** - Optimized for all devices and screen sizes
-- 🚀 **Production Ready** - Pre-configured deployment for Cloudflare Pages, Vercel, Netlify
+- projectiles ricochet from walls at certain angles
+- configurable ricochet profiles
+- AI enemies with three behavior types
+  - **Berserker** - a fast enemy who charges the player and performs melee attacks
+  - **Sharpshooter** - will barrage the player once spotted
+  - **Sapper** - moves around and plants mines making the life difficult
 
-## Use Cases
+## Technology
 
-- Template marketplace (Astro themes, WordPress themes, UI kits)
-- Digital product store (fonts, graphics, design assets)
-- SaaS template gallery (landing pages, dashboards)
-- Component library showcase
-- Theme directory or catalog
+To make this game I used:
 
-## What's Included
+- **UE5 Blueprints**, since I had little time for the whole project and needed to move very fast
+- **Blender** where I myself produced all the 3d assets used in the game. I also programmed a set of tools for Blender-to-Unreal export pipeline using Blender's Python API
 
-- Complete TypeScript source code
-- Keystatic CMS setup with collections
-- Voting API with browser fingerprinting
-- Multi-currency pricing system
-- Advanced filtering components
-- Promotional banner system
-- Testimonials section
-- Partner/sponsor showcase
-- FAQ management
-- Lifetime updates via GitHub
-- Commercial use license
-
-## Perfect For
-
-- 👨‍💻 Indie developers launching marketplaces
-- 🏢 Agencies building client projects
-- 🚀 Entrepreneurs selling digital products
-- 💼 Freelancers creating portfolio sites
+All the SFX used in the game were purchased online.
