@@ -70,12 +70,11 @@ const projects = defineCollection({
     pattern: "**/*.{md,mdoc,yaml}",
     base: "./src/content/projects",
   }),
-  schema: ({ image }) =>
+  schema: ({ }) =>
     z.object({
       featured: z.boolean().optional().default(false),
       title: z.string(),
       description: z.string(),
-      image: image(),
       preview: z.union([
         z.object({
           type: z.literal("image"),

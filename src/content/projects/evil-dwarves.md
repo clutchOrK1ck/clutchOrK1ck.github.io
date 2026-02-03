@@ -5,12 +5,11 @@ description: >-
   Built with Astro, Keystatic CMS, and modern web technologies.
 preview:
   type: video
-  src: /previews/projects/evil-dwarves/20220611_190317.mp4
-  poster: /images/projects/evil-dwarves/image.png
+  src: /project-previews/evil-dwarves/20220611_190317.mp4
+  poster: /project-previews/evil-dwarves/poster.png
   autoplay: true
   loop: true
   muted: true
-image: '@assets/projects/templix-professional-marketplace-template/image.png'
 startDate: 2025-12-17
 endDate: 2026-01-05
 skills:
