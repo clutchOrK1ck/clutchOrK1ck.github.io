@@ -86,7 +86,7 @@ function readProjectGallery(projectId: string): GalleryItem[] {
       const extension = lowerCaseFilePath.slice(lowerCaseFilePath.lastIndexOf("."));
       return {
         type: VIDEO_EXTENSIONS.includes(extension) ? "video" : "image",
-        src: url,
+        src: url.replace("/public", ""),
       };
     });
 }
