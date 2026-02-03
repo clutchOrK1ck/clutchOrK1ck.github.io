@@ -1,7 +1,7 @@
 ---
 title: About Me
 photo: '@assets/about/image.jpg'
-link: https://linkedin.com/in/lauroguedes
+link: https://www.linkedin.com/in/serhii-poklonskyi-11299115b/
 ---
 I’m a game developer with a long-term passion for games and a strong professional background in software engineering.
 
