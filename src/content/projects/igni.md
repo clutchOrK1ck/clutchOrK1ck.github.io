@@ -1,27 +1,23 @@
 ---
-title: Igni - Witcher 1-to-Unreal game assets bridge
+title: Igni
 description: >-
-  Igni is a multi-processed Python console application that converts Witcher 1 assets into format that can be imported to Unreal.
+  Igni brings game assets of "The Witcher" game into Unreal Engine! It consists of a console application and several utility scripts
+  for easy imports into Unreal Engine
 preview:
-  type: video
-  src: /project-previews/evil-dwarves/20220611_190317.mp4
-  poster: /project-previews/evil-dwarves/poster.png
-  autoplay: true
-  loop: true
-  muted: true
+  type: image
+  src: /project-previews/igni/01_sample_scene.png
 startDate: 2022-12-01
 skills:
   - Python
   - Autodesk FBX SDK
   - kaitai
-sourceLink: https://portal.astro.build/themes/templix-professional-marketplace-template/
-itchLink: https://clutchorkick.itch.io/evil-dwarves
+sourceLink: https://github.com/clutchOrK1ck/IGNI
 featured: true
 prio: 0
 ---
 ## Background
 
-Witcher 1 is one of my favorite games of all times. After several playthroughs, I came to an ambitious idea of rebuilding it in Unreal Engine 5. Not a real remake - just a 'transport' of game assets from Witcher's binaries into the engine. That's how *Igni* (inspired by the name of one of the witcher signs) was born. *Igni* combines a mutli-processed Python console application and a number of Python utility scripts to be executed in Unreal Engine. 
+Witcher 1 is one of my favorite games of all times. After several playthroughs, I came to an ambitious idea of rebuilding it in Unreal Engine 5. Not a real remake - just a 'transport' of game assets from Witcher's binaries into the engine. That's how *Igni* (inspired by the name of one of the witcher's signs) was born. *Igni* combines a mutli-processed Python console application and a number of Python utility scripts to be executed in Unreal Engine. 
 
 ## Features
 
