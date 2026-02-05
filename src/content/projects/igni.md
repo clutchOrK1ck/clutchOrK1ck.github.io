@@ -17,6 +17,7 @@ skills:
 sourceLink: https://portal.astro.build/themes/templix-professional-marketplace-template/
 itchLink: https://clutchorkick.itch.io/evil-dwarves
 featured: true
+prio: 0
 ---
 ## Background
 
