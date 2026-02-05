@@ -10,6 +10,7 @@ startDate: 2022-12-01
 skills:
   - Python
   - Autodesk FBX SDK
+  - Unreal Engine 5 Python
   - kaitai
 sourceLink: https://github.com/clutchOrK1ck/IGNI
 featured: true

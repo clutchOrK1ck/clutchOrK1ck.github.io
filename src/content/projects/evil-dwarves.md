@@ -13,7 +13,8 @@ preview:
 startDate: 2024-05-10
 endDate: 2024-05-20
 skills:
-  - UE5 Blueprints
+  - Unreal Engine 5
+  - Blueprints
   - Blender
 itchLink: https://clutchorkick.itch.io/evil-dwarves
 featured: true
