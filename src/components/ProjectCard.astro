@@ -15,10 +15,20 @@ function formatPeriod(startDate: Date, endDate?: Date) {
     month: "short",
     year: "numeric",
   };
+
   const start = startDate.toLocaleDateString("en-US", options);
-  const end = endDate
-    ? endDate.toLocaleDateString("en-US", options)
-    : "Present";
+
+  // If no end date, keep existing behavior
+  if (!endDate) return `${start} - Present`;
+
+  // If same month + year, return only the start date
+  const sameMonthAndYear =
+    startDate.getFullYear() === endDate.getFullYear() &&
+    startDate.getMonth() === endDate.getMonth();
+
+  if (sameMonthAndYear) return start;
+
+  const end = endDate.toLocaleDateString("en-US", options);
   return `${start} - ${end}`;
 }
 ---
