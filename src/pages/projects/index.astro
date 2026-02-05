@@ -7,7 +7,7 @@ const projects = await getCollection("projects");
 
 // Sort by start date, most recent first
 const sortedProjects = projects.sort(
-  (a, b) => a.data.prio - b.data.prio
+  (a, b) => b.data.prio - a.data.prio
 );
 ---
 

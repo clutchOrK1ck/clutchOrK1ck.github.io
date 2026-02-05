@@ -73,7 +73,7 @@ const projects = defineCollection({
   schema: ({ }) =>
     z.object({
       featured: z.boolean().optional().default(false),
-      prio: z.number().optional().default(100),
+      prio: z.number().optional().default(0),
       title: z.string(),
       description: z.string(),
       preview: z.union([
