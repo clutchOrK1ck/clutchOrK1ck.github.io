@@ -14,7 +14,7 @@ endDate: 2025-11-14
 skills:
   - Godot
   - GDScript
-sourceLink: https://github.com/clutchOrK1ck/IGNI
+sourceLink: https://github.com/clutchOrK1ck/shroom-jam-2025
 itchLink: https://clutchorkick.itch.io/duck-pursuit
 featured: true
 prio: 0
