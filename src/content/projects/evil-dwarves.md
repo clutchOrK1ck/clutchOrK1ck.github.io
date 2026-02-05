@@ -1,11 +1,11 @@
 ---
-title: Evil Dwarves - a top-down shooter with fun ricochet mechanics
+title: Evil Dwarves
 description: >-
-  A production-ready marketplace for selling templates and digital products.
-  Built with Astro, Keystatic CMS, and modern web technologies.
+  Evil Dwarves is a top-down shooter with fun ricochet mechanics
+  that I developed as a solo for the BulletHell game jam.
 preview:
   type: video
-  src: /project-previews/evil-dwarves/20220611_190317.mp4
+  src: /project-previews/evil-dwarves/dwarves-preview.mp4
   poster: /project-previews/evil-dwarves/poster.png
   autoplay: true
   loop: true
@@ -15,7 +15,6 @@ endDate: 2024-05-20
 skills:
   - UE5 Blueprints
   - Blender
-sourceLink: https://portal.astro.build/themes/templix-professional-marketplace-template/
 itchLink: https://clutchorkick.itch.io/evil-dwarves
 featured: true
 ---
