@@ -1,7 +1,7 @@
 ---
 title: Duck Pursuit
 description: >-
-  And endless runner with world speed-up mechanics that I programmed for the ShroomJam in collaboration with a 2D artist and a 2D animator
+  An endless runner with world speed-up mechanics that I programmed for the ShroomJam in collaboration with a 2D artist and a 2D animator
 preview:
   type: video
   src: /project-previews/duck-pursuit/duck-preview.mp4
