@@ -1,17 +1,22 @@
 ---
 import Layout from "./Layout.astro";
-import { Image } from "astro:assets";
 import SkillBadge from "../components/SkillBadge.astro";
 import { ExternalLink } from "@lucide/astro";
 import { Carousel } from "webcoreui/astro";
+
+interface ProjectGalleryItem {
+  type: string;
+  source: string;
+  caption?: string;
+}
 
 interface Props {
   projectId: string;
   title: string;
   description: string;
+  gallery?: ProjectGalleryItem[];
   startDate: Date;
   endDate?: Date;
-  image: any;
   skills: string[];
   demoLink?: string;
   sourceLink?: string;
@@ -22,9 +27,9 @@ const {
   projectId,
   title,
   description,
+  gallery,
   startDate,
   endDate,
-  image,
   skills,
   demoLink,
   sourceLink,
@@ -70,39 +75,6 @@ function calculateDuration(startDate: Date, endDate?: Date) {
   if (remainingMonths === 0) return years === 1 ? "1 year" : `${years} years`;
   return `${years} year${years > 1 ? "s" : ""}, ${remainingMonths} month${remainingMonths > 1 ? "s" : ""}`;
 }
-
-// Project gallery (images and videos for the carousel of this project)
-type GalleryItem =
-  | { type: "image"; src: string}
-  | { type: "video"; src: string};
-
-const IMAGE_EXTENSIONS = [".png", ".jpg", ".jpeg"]
-const VIDEO_EXTENSIONS = [".mp4"]
-
-// dicover all media-files at build time
-const ALL_MEDIA_FILES = import.meta.glob(
-  "/public/project-galleries/**/*.{png,jpg,jpeg,mp4}",
-  { eager: true, query: "?url", import: "default"}
-) as Record<string, string>;
-
-function readProjectGallery(projectId: string): GalleryItem[] {
-  const prefix = `/public/project-galleries/${projectId}/`;
-
-  return Object.entries(ALL_MEDIA_FILES)
-    .filter(([filePath]) => filePath.startsWith(prefix))
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([filePath, url]) => {
-      const lowerCaseFilePath = filePath.toLowerCase();
-      const extension = lowerCaseFilePath.slice(lowerCaseFilePath.lastIndexOf("."));
-      return {
-        type: VIDEO_EXTENSIONS.includes(extension) ? "video" : "image",
-        src: url.replace("/public", ""),
-      };
-    });
-}
-
-const projectGallery = readProjectGallery(projectId);
-console.log("Extracted gallery for: ", projectId, ": ", projectGallery);
 ---
 
 <Layout title={title} description={description}>
@@ -129,28 +101,38 @@ console.log("Extracted gallery for: ", projectId, ": ", projectGallery);
 
     <!-- Project gallery -->
     {
-      projectGallery.length > 0 && (
+      gallery.length > 0 && (
         <div class="mb-8 rounded-2xl overflow-hidden">
-          <Carousel items={projectGallery.length}>
-            {projectGallery.map((item) => (
+          <Carousel items={gallery.length}>
+            {gallery.map((galleryItem) => (
               <li class="w-full">
-                <div class="aspect-video w-full overflow-hidden rounded-2xl bg-black">
+                <div class="relative aspect-video w-full overflow-hidden rounded-2xl bg-black">
                   {
-                    item.type === "image" ? (
+                    galleryItem.type === "image" ? (
                       <img
-                        src={item.src}
+                        src={galleryItem.source}
                         alt={title}
                         class="w-full h-full object-cover"
                       />
                     ) : (
                       <video
-                        src={item.src}
+                        src={galleryItem.source}
                         class="w-full h-full object-cover"
                         controls
                         playsinline
                       />
                     )
                   }
+
+                  {/* Caption overlay */}
+                  {galleryItem.caption && (
+                    <div class="absolute bottom-4 left-4 right-4 flex">
+                      <p class="max-w-full bg-black/55 backdrop-blur-md text-white/95 text-sm md:text-base
+                                px-4 py-2 rounded-full truncate">
+                        {galleryItem.caption}
+                      </p>
+                    </div>
+                  )}
                 </div>
               </li>
             ))}

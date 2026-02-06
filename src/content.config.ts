@@ -92,6 +92,16 @@ const projects = defineCollection({
           alt: z.string().optional(),
         }),
       ]),
+      gallery: z.array(
+        z.object({
+          type: z.enum([
+            "image",
+            "video",
+          ]),
+          source: z.string(),
+          caption: z.string().optional(),
+        })
+      ).optional(),
       startDate: z.coerce.date(),
       endDate: z.coerce.date().optional(),
       skills: z.array(z.string()),

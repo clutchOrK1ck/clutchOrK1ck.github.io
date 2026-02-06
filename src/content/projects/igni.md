@@ -6,6 +6,13 @@ description: >-
 preview:
   type: image
   src: /project-previews/igni/01_sample_scene.png
+gallery:
+  - type: image
+    source: /project-galleries/igni/01_sample_scene.png
+    caption: A sample scene that consists of the assets imported from "The Witcher" using Igni
+  - type: image
+    source: /project-galleries/igni/02_imported_assets.png
+    caption: Material instances for the imported assets are auto-generated with Python, based on the shader information retrieved from the game files
 startDate: 2022-12-01
 skills:
   - Python

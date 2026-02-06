@@ -9,6 +9,9 @@ preview:
   autoplay: true
   loop: true
   muted: true
+gallery:
+  - type: video
+    source: https://clutchOrK1ck-portfolio.b-cdn.net/duck-pursuit-gameplay.mp4
 startDate: 2025-11-07
 endDate: 2025-11-14
 skills:
