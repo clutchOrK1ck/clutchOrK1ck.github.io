@@ -7,11 +7,10 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@astrojs/react";
 import markdoc from "@astrojs/markdoc";
 import keystatic from "@keystatic/astro";
-import vercel from "@astrojs/vercel";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), markdoc(), keystatic(), webcore()],
+  integrations: [react(), markdoc(), webcore()],
 
   vite: {
     plugins: [tailwindcss()],
@@ -20,13 +19,7 @@ export default defineConfig({
     },
   },
 
-  output: "server",
-
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    },
-  }),
+  output: "static",
 
   site: 'https://clutchOrK1ck.github.io',
 });
