@@ -1,4 +1,5 @@
-enableThemeSelector: true
+enableThemeSelector: false
+defaultTheme: dim
 extraLinksEnabled: true
 extraLinks:
   - link: /blog/guides/bloomfolio-complete-guide-building-your-portfolio

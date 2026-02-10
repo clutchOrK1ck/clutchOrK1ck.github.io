@@ -1,6 +1,8 @@
 ---
 import { Palette } from "@lucide/astro";
 
+const { defaultTheme } = Astro.props;
+
 const themes = [
   { value: "light", label: "Light" },
   { value: "dark", label: "Dark" },
@@ -37,7 +39,7 @@ const themes = [
   </ul>
 </div>
 
-<script is:inline>
+<script is:inline define:vars={{ defaultTheme }}>
   // Set theme on page load based on localStorage or system preference
   function setTheme() {
     const savedTheme = localStorage.getItem("theme");
@@ -45,9 +47,7 @@ const themes = [
 
     // If no saved theme, use system preference
     if (!theme) {
-      theme = window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light";
+      theme = defaultTheme;
     }
 
     // Apply theme to document

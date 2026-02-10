@@ -74,7 +74,7 @@ const origin = Astro.site;
   <body class="min-h-screen">
     <!-- Theme Controls - Fixed Position -->
     <div class="fixed top-4 right-4 z-50">
-      {general.enableThemeSelector ? <ThemeSelector /> : <ThemeToggle />}
+      {general.enableThemeSelector ? <ThemeSelector defaultTheme={general.defaultTheme}/> : <ThemeToggle defaultTheme={general.defaultTheme}/>}
     </div>
 
     <slot />

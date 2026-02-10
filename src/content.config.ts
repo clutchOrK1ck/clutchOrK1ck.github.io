@@ -159,6 +159,7 @@ const general = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdoc,yaml}", base: "./src/content/general" }),
   schema: z.object({
     enableThemeSelector: z.boolean(),
+    defaultTheme: z.string(),
     extraLinksEnabled: z.boolean(),
     extraLinks: z.array(
       z.object({

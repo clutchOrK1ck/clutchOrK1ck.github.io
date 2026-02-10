@@ -1,9 +1,11 @@
 ---
 // Theme toggle component for switching between light and dark modes
+
+const { defaultTheme } = Astro.props;
 ---
 
 <label class="swap swap-rotate">
-  <input type="checkbox" class="theme-controller" value="dark" />
+  <input type="checkbox" class="theme-controller" value={defaultTheme} />
 
   <!-- sun icon -->
   <svg
@@ -28,17 +30,14 @@
   </svg>
 </label>
 
-<script is:inline>
+<script is:inline define:vars={{ defaultTheme }}>
   const lightThemeName = "light";
-  const darkThemeName = "dark";
+  const darkThemeName = "dim";
 
   // Set theme on page load based on localStorage or system preference
   function setTheme() {
     const theme =
-      localStorage.getItem("theme") ||
-      (window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? darkThemeName
-        : lightThemeName);
+      localStorage.getItem("theme") || defaultTheme;
     document.documentElement.setAttribute("data-theme", theme);
     const toggle = document.querySelector(".theme-controller");
     if (toggle) {
