@@ -1,6 +1,6 @@
 enableThemeSelector: false
 defaultTheme: dim
-extraLinksEnabled: true
+extraLinksEnabled: false
 extraLinks:
   - link: /blog/guides/bloomfolio-complete-guide-building-your-portfolio
     icon: Flower2
