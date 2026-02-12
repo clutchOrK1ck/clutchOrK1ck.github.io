@@ -103,7 +103,7 @@ function calculateDuration(startDate: Date, endDate?: Date) {
     {
       gallery.length > 0 && (
         <div class="mb-8 rounded-2xl overflow-hidden">
-          <Carousel items={gallery.length}>
+          <Carousel items={gallery.length} pagination={{ type: 'dots' }}>
             {gallery.map((galleryItem) => (
               <li class="w-full">
                 <div class="relative aspect-video w-full overflow-hidden rounded-2xl bg-black">
