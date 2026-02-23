@@ -5,7 +5,7 @@ description: >-
 preview:
   type: video
   src: /project-previews/duck-pursuit/duck-preview.mp4
-  poster: /project-previews/duck-pursuit/poster.png
+  poster: /project-previews/duck-pursuit/poster.webp
   autoplay: true
   loop: true
   muted: true

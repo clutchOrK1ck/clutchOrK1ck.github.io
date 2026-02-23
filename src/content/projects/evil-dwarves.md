@@ -6,7 +6,7 @@ description: >-
 preview:
   type: video
   src: /project-previews/evil-dwarves/dwarves-preview.mp4
-  poster: /project-previews/evil-dwarves/poster.png
+  poster: /project-previews/evil-dwarves/poster.webp
   autoplay: true
   loop: true
   muted: true
@@ -14,17 +14,17 @@ gallery:
   - type: video
     source: https://clutchOrK1ck-portfolio.b-cdn.net/evil-dwarves-gameplay.mp4
   - type: image
-    source: /project-galleries/evil-dwarves/02_blender.png
+    source: /project-galleries/evil-dwarves/02_blender.webp
     caption: I made all the game assets in Blender
   - type: image
-    source: /project-galleries/evil-dwarves/03_unreal.png
+    source: /project-galleries/evil-dwarves/03_unreal.webp
     caption: The game level. I used orthographic camera to "simulate" 2D
   - type: image
-    source: /project-galleries/evil-dwarves/04_screen.png
+    source: /project-galleries/evil-dwarves/04_screen.webp
   - type: image
-    source: /project-galleries/evil-dwarves/05_screen.png
+    source: /project-galleries/evil-dwarves/05_screen.webp
   - type: image
-    source: /project-galleries/evil-dwarves/06_screen.png
+    source: /project-galleries/evil-dwarves/06_screen.webp
 startDate: 2024-05-10
 endDate: 2024-05-20
 skills:
