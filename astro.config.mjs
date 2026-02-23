@@ -1,6 +1,7 @@
 import { webcore } from "webcoreui/integration";
 // @ts-check
 import { defineConfig } from "astro/config";
+import vercel from "@astrojs/vercel";
 
 import tailwindcss from "@tailwindcss/vite";
 
@@ -21,5 +22,7 @@ export default defineConfig({
 
   output: "static",
 
-  site: 'https://clutchOrK1ck.github.io',
+  adapter: vercel(),
+
+  site: 'https://clutchorkick.dev',
 });
