@@ -1,5 +1,5 @@
 ---
-title: UniCredit Bank AG
+title: UniCredit Bank GmbH
 subtitle: Senior Associate (Middle Office)
 location: 🇩🇪 Germany
 startDate: 2019-11-01

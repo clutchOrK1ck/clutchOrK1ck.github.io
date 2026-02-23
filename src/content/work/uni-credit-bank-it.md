@@ -1,5 +1,5 @@
 ---
-title: UniCredit Bank AG
+title: UniCredit Bank GmbH
 subtitle: Sr. Software Engineer
 location: 🇩🇪 Germany
 startDate: 2021-11-01
