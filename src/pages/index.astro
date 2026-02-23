@@ -83,5 +83,14 @@ const general = generalEntry.data;
       <!-- Contact Section -->
       {general.showContactSection && <Contact />}
     </div>
+
+    <!-- Mobile layout -->
+    <div class="lg:hidden">
+      <!-- Projects Section -->
+      {general.showProjectsSection && <Projects />}
+
+      <!-- Contact Section -->
+      {general.showContactSection && <Contact />}
+    </div>
   </main>
 </Layout>

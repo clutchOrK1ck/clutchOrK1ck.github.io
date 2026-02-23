@@ -17,5 +17,5 @@ Add me on Discord!
     </svg>
 </button> 
 
-or reach out via the links <span class="whitespace-nowrap"><a href="#top" class="inline align-baseline text-inherit font-inherit no-underline hover:underline text-base-content/60 hover:text-base-content transition" title="Back to top">above ↑↑</a></span>
+or reach out via the links <span class="whitespace-nowrap"><a href="#top" class="inline align-baseline text-inherit font-inherit no-underline hover:underline text-base-content/60 hover:text-base-content transition" title="Back to top">above↑</a></span>
     
