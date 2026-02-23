@@ -73,6 +73,10 @@ const origin = Astro.site;
     <meta name="twitter:image" content={`${origin}/images/og_home.png`} />
   </head>
   <body class="min-h-screen">
+
+    <!-- astro analytics -->
+    <Analytics />
+    
     <!-- Theme Controls - Fixed Position -->
     <div class="fixed top-4 right-4 z-50">
       {general.enableThemeSelector ? <ThemeSelector defaultTheme={general.defaultTheme}/> : <ThemeToggle defaultTheme={general.defaultTheme}/>}
