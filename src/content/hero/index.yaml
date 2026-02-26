@@ -19,3 +19,6 @@ socialLinks:
   - url: https://www.linkedin.com/in/poklonskyi
     icon: LinkedIn
     label: LinkedIn
+  - url: /cv/CV_Poklonskyi.pdf
+    icon: CV
+    label: My CV

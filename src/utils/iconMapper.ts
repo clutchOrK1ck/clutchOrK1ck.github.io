@@ -33,6 +33,7 @@ import Bluesky from "../components/icons/Bluesky.astro";
 import Instagram from "../components/icons/Instagram.astro";
 import YouTube from "../components/icons/YouTube.astro";
 import Itch from "../components/icons/Itch.astro";
+import CV from "../components/icons/CV.astro";
 
 export type IconName =
   | "Flower2"
@@ -66,7 +67,8 @@ export type IconName =
   | "Instagram"
   | "YouTube"
   | "Email"
-  | "Itch";
+  | "Itch"
+  | "CV";
 
 export const iconMap: Record<IconName, any> = {
   Flower2,
@@ -101,6 +103,7 @@ export const iconMap: Record<IconName, any> = {
   YouTube,
   Email: Mail,
   Itch,
+  CV,
 };
 
 export function getIcon(iconName: IconName) {
