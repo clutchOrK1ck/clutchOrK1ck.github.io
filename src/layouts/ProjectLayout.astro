@@ -185,7 +185,7 @@ function calculateDuration(startDate: Date, endDate?: Date) {
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn btn-soft gap-2"
-                onclick={`va('event', { name: 'visit_github', data: { project: ${projectId} } })`}
+                onclick={`va('event', { name: 'visit_github', data: { project: '${projectId}' } })`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -205,7 +205,7 @@ function calculateDuration(startDate: Date, endDate?: Date) {
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn btn-primary gap-2"
-                onclick={`va('event', { name: 'visit_itch', data: { project: ${projectId} } })`}
+                onclick={`va('event', { name: 'visit_itch', data: { project: '${projectId}' } })`}
               >
                 <svg 
                   fill="currentColor" 
