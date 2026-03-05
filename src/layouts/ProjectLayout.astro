@@ -185,6 +185,7 @@ function calculateDuration(startDate: Date, endDate?: Date) {
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn btn-soft gap-2"
+                onclick="va('event', { name: 'visit_github' })"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -272,11 +273,7 @@ function calculateDuration(startDate: Date, endDate?: Date) {
   </article>
 
   <script define:vars={{ projectId: projectId }}>
-    va('event', {
-      name: 'open_project', data: { project: projectId }
-    });
-
-    console.log("tracking project_open", projectId);
+    va('event', { name: 'open_project', data: { project: projectId } });
   </script>
 </Layout>
 
