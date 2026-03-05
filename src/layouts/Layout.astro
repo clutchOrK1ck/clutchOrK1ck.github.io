@@ -71,6 +71,16 @@ const origin = Astro.site;
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={`${origin}/images/og_home.webp`} />
+
+    <script is:inline>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+
+    <script defer src="/_vercel/insights/script.js"></script>
   </head>
   <body class="min-h-screen">
 
