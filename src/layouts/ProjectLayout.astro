@@ -270,5 +270,14 @@ function calculateDuration(startDate: Date, endDate?: Date) {
       <a href="/projects" class="btn btn-primary"> View All Projects </a>
     </div>
   </article>
+
+  <script define:vars={{ projectId: projectId }}>
+    import { track } from '@vercel/analytics';
+
+    // fire once per page load
+    track('project_open', {
+      projectId: { projectId },
+    });
+  </script>
 </Layout>
 
