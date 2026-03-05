@@ -273,7 +273,7 @@ function calculateDuration(startDate: Date, endDate?: Date) {
 
   <script define:vars={{ projectId: projectId }}>
     va('event', {
-      name: 'open_projct', project: projectId
+      name: 'open_project', data: { project: projectId }
     });
 
     console.log("tracking project_open", projectId);
