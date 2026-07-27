@@ -33,7 +33,7 @@ skills:
   - Blender
 itchLink: https://clutchorkick.itch.io/evil-dwarves
 featured: true
-prio: 1
+prio: 0
 ---
 ## The Game
 

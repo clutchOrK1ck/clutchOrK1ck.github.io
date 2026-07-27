@@ -20,7 +20,7 @@ skills:
 sourceLink: https://github.com/clutchOrK1ck/shroom-jam-2025
 itchLink: https://clutchorkick.itch.io/duck-pursuit
 featured: true
-prio: 0
+prio: 1
 ---
 
 I scripted this little endless runner as a submission for the [ShroomJam 2025](https://itch.io/jam/shroomjam-2025). I had long been interested in Godot and chose it as the game's engine. I enjoyed Godot a lot! The engine is light-weight and easy to pick up. At the same time I truly came to appreciate Unreal for how many features it gives out of the box!

@@ -12,6 +12,21 @@ preview:
 gallery:
     - type: video
       source: https://clutchOrK1ck-portfolio.b-cdn.net/kden-montage.mp4
+    - type: image
+      source: https://clutchOrK1ck-portfolio.b-cdn.net/pcg-buildings/general-illustration.jpg
+      caption: Sample buildings created with the tool
+    - type: image
+      source: https://clutchOrK1ck-portfolio.b-cdn.net/pcg-buildings/generate-panel-building-pcg-node-annotated.jpg
+      caption: A custom PCG blueprint generates entire building points with necessary attributes
+    - type: image
+      source: https://clutchOrK1ck-portfolio.b-cdn.net/pcg-buildings/sat-orientation-annotated.jpg
+      caption: Satellite dishes on all buildings are facing satellites at a set position in the sky
+    - type: image
+      source: https://clutchOrK1ck-portfolio.b-cdn.net/pcg-buildings/simultaneous-object-generation-annotated.jpg
+      caption: Arbitrarily many objects can be generated on a single panel
+    - type: image
+      source: https://clutchOrK1ck-portfolio.b-cdn.net/pcg-buildings/dynamic-building-roofs-annotated.jpg
+      caption: Buildings' roofs are procedural meshes and adjust to building dimensions
 startDate: 2026-03-28
 endDate: 2026-06-30
 skills:
@@ -19,8 +34,10 @@ skills:
     - Cpp
     - Blueprints
     - PCG
-sourceLink: https://github.com/clutOrK1ck/TODO
+sourceLink: https://github.com/clutchOrK1ck/pcg-buildings
 featured: true
-prio: 0
+prio: 3
 ---
+
+Check out my [blog post](https://conspectus-amber.vercel.app/blog/pcg-buildings) giving a detailed overview of the tool!
 
