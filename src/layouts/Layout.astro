@@ -80,6 +80,18 @@ const origin = Astro.site;
         };
     </script>
 
+    <script>
+      function initializeVideos() {
+        document.querySelectorAll("video").forEach((video) => {
+          if (!video.currentSrc) {
+            video.load();
+          }
+        });
+      }
+
+      document.addEventListener("astro:page-load", initializeVideos);
+    </script>
+
     <script defer src="/_vercel/insights/script.js"></script>
   </head>
   <body class="min-h-screen">

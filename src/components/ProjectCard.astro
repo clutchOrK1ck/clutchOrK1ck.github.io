@@ -69,12 +69,17 @@ function formatPeriod(startDate: Date, endDate?: Date) {
               muted
               loop
               playsinline
-              preload="none"
+              preload="metadata"
               onmouseenter="
                 if (this._pauseTimeout) {
                   clearTimeout(this._pauseTimeout);
                   this._pauseTimeout = null;
                 }
+
+                if (!this.currentSrc) {
+                  this.load();
+                }
+                  
                 this.play();
               "
 
